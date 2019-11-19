@@ -1,9 +1,6 @@
-console.log([] + []);  //''
-console.log([] + {});  //[object Object]
-console.log(typeof {}.valueOf());   //object
-console.log(typeof {}.toString());  //string
-console.log({}.toString());   //[object Object]
-console.log({} + {});   //[object Object][object Object]
+let obj = {
+    m: 1
+}
+let { m, a:1 } = obj
 
-console.log(+{});     //NaN
-console.log(Number("[object Object]"));     //NaN
+console.log(a)
